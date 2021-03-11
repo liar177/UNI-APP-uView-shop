@@ -1,0 +1,59 @@
+<!--pages/sort/sort.wxml-->
+<view class="box">
+	<view class="header">
+		<view class="placeholder">
+		</view>
+		<view class="header-title">
+			分类
+		</view>
+		<view class="searchbox">
+			<image class="search-icon" src="/pages/images/search.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+			<input type="text" placeholder="全品类1件85折2件8折  再享5090元优惠礼包" />
+		</view>
+	</view>
+	<view class="content">
+		<van-sidebar class="sidebar" bind:change="onChange" active-key="{{ activeKey }}">
+			<van-sidebar-item title="推荐" />
+			<van-sidebar-item title="家居" />
+			<van-sidebar-item title="零食" />
+			<van-sidebar-item title="配饰" />
+			<van-sidebar-item title="女装" />
+			<van-sidebar-item title="女鞋" />
+			<van-sidebar-item title="男士" />
+			<van-sidebar-item title="手表" />
+			<van-sidebar-item title="珠宝" />
+			<van-sidebar-item title="运动" />
+			<van-sidebar-item title="推荐" />
+			<van-sidebar-item title="家居" />
+			<van-sidebar-item title="零食" />
+			<van-sidebar-item title="配饰" />
+		</van-sidebar>
+		<view class="sidebar-content">
+			<swiper current="{{currentTab}}" class="swiper-box" duration="0">
+				<swiper-item catchtouchmove='catchTouchMove'>
+
+					<view class="recom-banner">
+						<image class="" src="/pages/images/recommend-banner.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+
+					<view class="recom-title">
+						热门推荐
+					</view>
+
+					<view class="rem-grid">
+						<view class="rem-grid-item" wx:for="{{rem_imgs}}" wx:key="index">
+							<image class="rem-imgs" src="{{rem_imgs[index].src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+							<view class="rem-name">{{rem_imgs[index].name}}</view>
+						</view>
+					</view>
+          
+				</swiper-item>
+				<swiper-item catchtouchmove='catchTouchMove'>家居的布局</swiper-item>
+				<swiper-item catchtouchmove='catchTouchMove'>零食的布局</swiper-item>
+				<swiper-item catchtouchmove='catchTouchMove'>配饰的布局</swiper-item>
+			</swiper>
+      <view class="placeholder"></view>
+		</view>
+	</view>
+</view>

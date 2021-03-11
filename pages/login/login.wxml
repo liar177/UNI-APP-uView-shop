@@ -1,0 +1,15 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text>
+<input type="text" model:value="{{value}}"/>
+<text>{{value}}</text>
+
+<view class="wrapper">
+  <computed-example />
+</view>
+<view class="wrapper">
+  <watch-example />
+</view>
+<view class="wrapper">
+  <watch-example />
+</view> -->
+<button open-type="getUserInfo" bindgetuserinfo="getuser">点击使用微信账户登陆小程序</button>

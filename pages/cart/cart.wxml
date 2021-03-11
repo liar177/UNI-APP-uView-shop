@@ -1,0 +1,231 @@
+<!--pages/cart/cart.wxml-->
+<!-- <view class="placeholder"></view> -->
+<scroll-view scroll-y="{{true}}" class="box">
+	<view class="header">
+		<image class="header-bgi" src="/pages/images/diccover-bgi.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		<view class="placeholder"></view>
+		<view class="pagename">
+			购物车
+		</view>
+		<view class="remind">
+			<image class="remind-icon" src="/pages/images/V@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			<view>
+				首单购买成功可直升黄金会员，解锁更多权益
+			</view>
+			<view class="close">
+				X
+			</view>
+		</view>
+	</view>
+	<view class="cart">
+		<view class="cart-item">
+			<view class="item-title-box">
+				<view class="item-title">
+					<view class="select-box">
+						<van-checkbox checked-color="#ff2825" value="{{goodlist1[0]}}" data-index="0" bindchange="selectchange"></van-checkbox>
+					</view>
+					<van-icon name="shop-o" />
+					<view class="store">
+						特惠2件8折
+					</view>
+					<van-icon name="arrow" />
+				</view>
+				<view class="item-status">
+					免运费
+				</view>
+			</view>
+			<view class="discount-box">
+				<view class="discount-info-box">
+					<view class="discount-info">
+						<view class="discount-tit">
+							满折
+						</view>
+						<view class="info">
+							已满2件，已减78.78
+						</view>
+					</view>
+					<view class="go2details">
+						查看活动
+					</view>
+				</view>
+				<view class="discount-status-box">
+					<view class="discount-status-tit">
+						抢购中
+					</view>
+					<view class="discount-end-time">
+						抢购结束时间 10月20日 00:00
+					</view>
+				</view>
+			</view>
+			<view class="cartItem">
+				<view class="selectBox">
+					<view class="select-box">
+						<van-checkbox checked-color="#ff2825" value="{{goodlist1[1]}}" data-index="1" bindchange="selectchange"></van-checkbox>
+					</view>
+				</view>
+				<view class="item-box">
+					<view class="item-thumb">
+						<image class="" src="/pages/images/11629704@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+					<view class="item-rightbox">
+						<navigator hover-class="none" url="/pages/detail/detail" open-type="navigate">
+							<view class="item-title">
+								哎哟喂30天量礼盒装(胶囊0.25g*30粒+口服液250ml*3瓶)含褪黑素成人中...
+							</view>
+						</navigator>
+						<view class="item-type">
+							<van-dropdown-menu>
+								<van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+							</van-dropdown-menu>
+						</view>
+						<view class="item-price-box">
+							<view class="item-price">
+								<view>￥</view>378
+							</view>
+							<view class="item-num-box">
+								<view class="num-rdc" data-item="0" bindtap="numrdc">-</view>
+								<view class="item-num">{{good[0]}}</view>
+								<view class="num-add" data-item="0" bindtap="numadd">+</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="discount-status-box item2">
+				<view class="discount-status-tit">
+					抢购中
+				</view>
+				<view class="discount-end-time">
+					抢购结束时间 10月20日 00:00
+				</view>
+			</view>
+			<view class="cartItem">
+				<view class="selectBox">
+					<view class="select-box">
+						<van-checkbox checked-color="#ff2825" value="{{goodlist1[2]}}" data-index="2" bindchange="selectchange"></van-checkbox>
+					</view>
+				</view>
+				<view class="item-box">
+					<view class="item-thumb">
+						<image class="" src="/pages/images/11629704@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+					<view class="item-rightbox">
+						<view class="item-title">
+							哎哟喂30天量礼盒装(胶囊0.25g*30粒+口服液250ml*3瓶)含褪黑素成人中...
+						</view>
+						<view class="item-type">
+							<van-dropdown-menu>
+								<van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+							</van-dropdown-menu>
+						</view>
+						<view class="item-price-box">
+							<view class="item-price">
+								<view>￥</view>378
+							</view>
+							<view class="item-num-box">
+								<view class="num-rdc" data-item="1" bindtap="numrdc">-</view>
+								<view class="item-num">{{good[1]}}</view>
+								<view class="num-add" data-item="1" bindtap="numadd">+</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="cart-item">
+			<view class="item-title-box">
+				<view class="item-title">
+					<view class="select-box">
+						<van-checkbox checked-color="#ff2825" value="{{goodlist2[0]}}" data-index="3" bindchange="selectchange"></van-checkbox>
+					</view>
+					<van-icon name="shop-o" />
+					<view class="store">
+						特惠2件8折
+					</view>
+					<van-icon name="arrow" />
+				</view>
+				<view class="item-cards">
+					<view class="item-status">
+						免运费
+					</view>
+					<view class="item-card">
+						领劵
+					</view>
+				</view>
+			</view>
+			<view class="cartItem">
+				<view class="selectBox">
+					<view class="select-box">
+						<van-checkbox checked-color="#ff2825" value="{{goodlist2[1]}}" data-index="4" bindchange="selectchange"></van-checkbox>
+					</view>
+				</view>
+				<view class="item-box">
+					<view class="item-thumb">
+						<image class="" src="/pages/images/11629704@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+					<view class="item-rightbox">
+						<view class="item-title">
+							哎哟喂30天量礼盒装(胶囊0.25g*30粒+口服液250ml*3瓶)含褪黑素成人中...
+						</view>
+						<view class="item-type">
+							<van-dropdown-menu>
+								<van-dropdown-item value="{{ value1 }}" options="{{ option1 }}" />
+							</van-dropdown-menu>
+						</view>
+						<view class="item-price-box">
+							<view class="item-price">
+								<view>￥</view>378
+							</view>
+							<view class="item-num-box">
+								<view class="num-rdc" data-item="2" bindtap="numrdc">-</view>
+								<view class="item-num">{{good[2]}}</view>
+								<view class="num-add" data-item="2" bindtap="numadd">+</view>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="gift">
+				<view class="giftContent">
+					<view class="gift-icon">
+						赠
+					</view>
+					<view class="gift-content">
+						【免费体验】千库产品“上手无忧”服务
+					</view>
+				</view>
+				<view class="gift-num">
+					x1
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="cart-sum">
+		<view class="cartSum">
+			<view class="sumInfo">
+				<view class="selectAll">
+					<van-checkbox value="{{ checked }}" checked-color="#ff2825" bind:change="onChange">
+						复选框
+					</van-checkbox>
+				</view>
+				<view class="sum-info">
+					<view class="sumup">
+						总计 <view class="sumup-pri">
+							<view>￥</view>{{num*pri}}
+						</view>
+					</view>
+					<view class="dis">
+						已优惠 <view class="disup-pri">
+							<view>￥</view>129.3
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="go2sum">
+				<view class="button-tit">去结算</view>
+				<view class="totalnum">{{num}}</view>
+			</view>
+		</view>
+
+	</view>
+</scroll-view>

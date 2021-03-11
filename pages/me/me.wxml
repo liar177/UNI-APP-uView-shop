@@ -1,0 +1,153 @@
+<!--pages/me/me.wxml-->
+<view class="wrapper">
+	<scroll-view scroll-y="true" class="box">
+		<view class="header">
+			<image class="bgi" src="/pages/images/me-background.png" />
+			<view class="placeholder"></view>
+			<view class="header-thumbline">
+				<view class="header-left">
+					<view class="thumb">
+						<image class="" src="/pages/images/500834991@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+					<view class="userbox">
+						<view class="username">宇宙无敌千库君</view>
+						<view class="vip">
+							<image class="" src="/pages/images/vip.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+							<navigator open-type="navigate" url="/pages/vip/vip">
+								<view>
+									黄金会员
+								</view>
+							</navigator>
+							<image class="" src="/pages/images/back2.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+						</view>
+					</view>
+				</view>
+				<view class="header-right">
+					<image class="" src="/pages/images/header-button.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				</view>
+			</view>
+			<view class="header-tabs">
+				<view class="header-tab">
+					<view class="ht-num">
+						13
+					</view>
+					<view class="ht-name">
+						商品关注
+					</view>
+				</view>
+				<view class="header-tab">
+					<view class="ht-num">
+						3
+					</view>
+					<view class="ht-name">
+						店铺关注
+					</view>
+				</view>
+				<view class="header-tab">
+					<view class="ht-num">
+						31
+					</view>
+					<view class="ht-name">
+						浏览足迹
+					</view>
+				</view>
+				<view class="header-tab">
+					<view class="ht-num">
+						0
+					</view>
+					<view class="ht-name">
+						常购清单
+					</view>
+				</view>
+			</view>
+			<view class="order-box">
+				<view class="order-title">
+					<view class="ot">
+						我的订单
+					</view>
+					<view class="order-all">
+						<view>
+							查看全部
+						</view>
+						<view>></view>
+					</view>
+
+				</view>
+				<view class="order-grid">
+					<view class="og-item">
+						<image class="" src="/pages/images/wallet.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+						<view>待付款</view>
+					</view>
+					<view class="og-item">
+						<image class="" src="/pages/images/notsend.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+						<view>待发货</view>
+					</view>
+					<view class="og-item">
+						<image class="" src="/pages/images/sending.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+						<view>已发货</view>
+					</view>
+					<view class="og-item">
+						<image class="" src="/pages/images/comment.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+						<view>待评价</view>
+					</view>
+				</view>
+				<view class="showorder-box">
+					<view class="left-box">
+						<image class="" src="/pages/images/12475534@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+					</view>
+					<view class="right-box">
+						<view class="showbox-title">
+							千库平衡车 定制版Ninebot 九号平衡车 智能...
+						</view>
+						<view class="show-status">等待付款</view>
+						<view class="showorder-price">
+							￥<view>1999.0</view>
+						</view>
+						<view class="purchase">立即支付</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="asset">
+			<view class="asset-title">
+				我的资产
+			</view>
+			<view class="asset-grid">
+				<view class="ag-item">
+					<view class="ag-num">3</view>
+					<view class="ag-sort">优惠券</view>
+				</view>
+				<view class="ag-item">
+					<view class="ag-num">￥1003</view>
+					<view class="ag-sort">账户余额</view>
+				</view>
+				<view class="ag-item">
+					<view class="ag-num">21</view>
+					<view class="ag-sort">金币</view>
+				</view>
+				<view class="ag-item">
+					<view class="ag-num">￥0.0</view>
+					<view class="ag-sort">礼品卡</view>
+				</view>
+			</view>
+		</view>
+		<view class="serve">
+			<view class="serve-title">
+				我的服务
+			</view>
+			<view class="serve-grid">
+				<van-grid>
+					<van-grid-item icon="point-gift-o" text="推荐有礼" />
+					<van-grid-item icon="gift-card-o" text="领券中心" />
+					<van-grid-item icon="after-sale" text="邀请返现" />
+					<van-grid-item icon="service-o" text="客服中心" />
+					<van-grid-item icon="clock-o" text="最近浏览" />
+					<van-grid-item icon="location-o" text="地址管理" />
+					<van-grid-item icon="records" text="意见反馈" />
+					<van-grid-item icon="setting-o" text="设置" />
+				</van-grid>
+			</view>
+		</view>
+	</scroll-view>
+</view>

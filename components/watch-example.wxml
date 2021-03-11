@@ -1,0 +1,4 @@
+<view>watch example</view>
+<input type="number" model:value="{{value1}}"/>
+<input type="number" model:value="{{value2}}"/>
+<view>{{value1}}+{{value2}} = {{sum}}</view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-steps": "@vant/weapp/steps/index"
+  },
+  "navigationBarBackgroundColor": "#ec4648",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "",
+  "navigationStyle": "default",
+  "enablePullDownRefresh":false
+}

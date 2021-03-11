@@ -1,0 +1,270 @@
+.box{
+  width: 100%;
+  /* height: 1250rpx; */
+  .placeholder{
+    width: 100%;
+    height: 50rpx;
+  }
+  .header{
+    width: 100%;
+    height: 763rpx;
+    position: relative;
+    .header-bgi{
+      width: 100%;
+      height: 100%;
+      position: absolute;left: 0;top: 0;
+      z-index: -2;
+    }
+    .nav-bar{
+      width: 61%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 42rpx;color: #fff;
+      .van-icon-arrow-left{
+        margin-left: 20rpx;
+        font-size: 40rpx;
+      }
+    }
+  }
+  .detailpage-pricebox{
+    width: 100%;margin: 0 auto;
+    height: 103rpx;
+    background-color: #fff;
+    position: absolute;left: 0;top: 742rpx;
+    border-radius: 20rpx 20rpx 0 0;
+    display: flex;align-items: center;justify-content: space-between;
+    font-size: 48rpx;color: #ff302d;
+    .price-box{
+      display: flex;align-items: baseline;
+      margin-left: 10rpx;
+    }
+    .small-price{
+      font-size: 20rpx;color: #ff302d;
+    }
+    .rightbox{
+      display: flex;width: 150rpx;
+      justify-content: space-between;margin-right: 10rpx;
+      .markdown-box{
+        /* width: 80rpx;
+        height: 100rpx; */
+        display: flex;
+        flex-direction: column;align-items: center;justify-content:center;
+        image{
+          width: 25rpx;
+          height: 25rpx;
+        }
+        view{
+          font-size: 20rpx;color: #4a4848;
+        }
+      }
+      .care-box{
+      /*   width: 100rpx;height: 100rpx; */
+        display: flex;flex-direction: column;align-items: center;justify-content:center;
+        image{
+          width: 29rpx;
+          height: 25rpx;
+        }
+        view{
+          font-size: 20rpx;color: #4a4848;
+        }
+      }
+    }
+  }
+  .vip-details{
+    width: 704rpx;
+    height: 55rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f8f9;
+    border-radius: 6rpx;margin: 0 auto ;
+    margin-top: 103rpx;
+    font-family: SourceHanSansCN-Medium;
+    font-size: 22rpx;color: #777676;
+    .vd-content{
+      display: flex;margin-left: 10rpx;
+    }
+    .getmore{
+      margin-right: 10rpx;
+    }
+    image{
+      width: 28rpx;
+      height: 22rpx;
+      margin-left: 10rpx;
+      margin-right: 10rpx;
+    }
+  }
+  .good-title-box{
+    width: 95%;margin: 0 auto;
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between; 
+    position: relative;
+    .sign{
+      width: 63rpx;
+      height: 30rpx;
+      position: absolute;
+      left: 0;top: 0;
+      margin-right: 20rpx;display: flex;align-items: center;justify-content: center;
+      background-image: linear-gradient(90deg, 
+        #ff6105 0%, 
+        #ff3826 100%), 
+      linear-gradient(
+        #010101, 
+        #010101);
+      background-blend-mode: normal, 
+        normal;
+      border-radius: 14.5rpx;
+
+      font-size: 20rpx;color: #fff;
+    }
+    .good-title{
+      margin-left: 66rpx;
+      font-size: 26rpx;color: #3c3939;
+    }
+  }
+  .separator{
+    width: 750rpx;
+    height: 20rpx;
+    background-color: #f7f8f9;
+    margin-bottom: 40rpx;
+  }
+  .promotion-box{
+    width: 100%;
+    position: relative;
+    margin: 40rpx 0;
+    .pb-firstline{
+      width: 76%;
+      margin: 0 auto;
+      display: flex;
+      .discount-sign1{
+        width: 124rpx;
+        height: 32rpx;
+        background-color: #ffe9e9;
+        border-radius: 6rpx;
+
+        display: flex;justify-content: center;align-items: center;
+        font-family: SourceHanSansCN-Medium;
+        font-size: 20rpx;color: #ff5b57;
+      }
+      .discount-note1{
+        margin-left: 40rpx;
+        font-size: 23rpx;color: #504e4e;
+      }
+    }
+    .pb-secondline{
+      width: 76%;
+      margin: 0 auto;
+      display: flex;margin-top: 20rpx;
+      .discount-sign2{
+        width: 62rpx;
+        height: 32rpx;
+        background-color: #ffe9e9;
+        border-radius: 6rpx;
+
+        display: flex;justify-content: center;align-items: center;
+        font-family: SourceHanSansCN-Medium;
+        font-size: 20rpx;color: #ff5b57;
+      }
+      .discount-note2{
+        
+        margin-left: 40rpx;
+        font-size: 23rpx;color: #504e4e;
+      }
+    }
+    
+  }
+  .promote-sign{
+    position: absolute;
+    width: 100%;
+    display: flex;justify-content: space-between;
+    left: 0;top: -5rpx;
+    .left-sign{
+      font-size: 24rpx;color: #b8b8b8;
+      margin-left: 24rpx;
+    }
+    .right-sign{
+      margin-right: 10rpx;
+      display: flex;
+      align-items: center;
+      view{
+        width: 8rpx;
+        height: 8rpx;
+        border-radius: 100%;
+        margin-right: 10rpx;
+        display: flex;
+      }
+      view:first-child{
+        background-color: #dcdcdc;
+      }
+      view:nth-child(2){
+        background-color: #c4c4c4;
+      }
+      view:last-child{
+        background-color: #909090;
+      }
+    }
+  } 
+  .goodinfo-box{
+    font-size: 23rpx;color: #3c3939;
+    position: relative;
+    .combo{
+      width: 100%;height: 94rpx;display:flex;
+      align-items: center;
+      
+        .promote-sign{
+        left: 0;
+        top:32rpx;
+      }
+      .combo-name{
+        margin-left: 96rpx;
+        width: 100%;
+        height: 100%;display: flex;align-items: center;
+        border-bottom:1px solid #f6f6f6;
+      }
+    }
+    .send{
+      width: 100%;height: 205rpx;
+      position: relative;
+      .promote-sign{
+        left: 0;
+        top:51rpx;
+      }
+      .address{
+        width: 100%;height: 100%;
+        display: flex;flex-direction: column;
+        justify-content: center;
+        font-size: 23rpx;   color: #3c3939;
+        margin-left: 96rpx;border-bottom:1px solid  #f6f6f6;
+        .add-secondline{
+          margin-top: 40rpx;
+          display: flex;
+          font-size: 23rpx;
+          view{
+            margin-left: 20rpx;
+            color: #bfbfbf;
+          }
+          
+        }
+      }
+    }
+    .freight{
+      width: 100%;height: 92rpx;
+      position: relative;
+      .promote-sign{
+        left: 0;
+        top:31rpx;
+      }
+      .freight-status{
+        width: 100%;height: 100%;
+        display: flex;flex-direction: column;
+        justify-content: center;
+        font-size: 23rpx;   color: #3c3939;
+        margin-left: 96rpx;
+      }
+    }
+  }
+  .lastone{
+    width: 100%;height: 100rpx;
+  }
+}

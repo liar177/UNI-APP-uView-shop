@@ -1,0 +1,28 @@
+<!--pages/ticket/ticket.wxml-->
+<scroll-view scroll-y="{{true}}" class="box">
+	<image class="bgi" src="/pages/images/ticket-bgi.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+	<view class="get-ticket">
+		<image class="" src="/pages/images/get-ticket.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+	</view>
+	<view class="event2">
+		<view class="leftbox">
+			<view class="topbrand">
+				TOP款榜单
+			</view>
+			<view class="social">
+				时尚穿搭服饰
+			</view>
+		</view>
+		<view class="rightbox">
+			<image class="" src="/pages/images/ticket-last-banner.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		</view>
+	</view>
+	<view class="placeholder">
+	</view>
+	<view class="placeholder">
+	</view>
+	<view class="placeholder">
+	</view>
+	<view class="placeholder">
+	</view>
+</scroll-view>

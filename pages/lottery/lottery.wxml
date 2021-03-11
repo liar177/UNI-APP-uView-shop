@@ -1,0 +1,94 @@
+<!--pages/lottery/lottery.wxml-->
+<view class="box">
+	<image class="bgi" src="/pages/images/lottery-bgi.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+	<view class="title">
+		<view class="tit1">
+			<view class="en">
+				<view>pin</view>
+				<view>ren</view>
+				<view>qi</view>
+			</view>
+			<view class="cn">拼人气</view>
+		</view>
+		<view class="tit1">
+			<view class="en">
+				<view>qiang</view>
+				<view>hao</view>
+				<view>li</view>
+			</view>
+			<view class="cn">抢好礼</view>
+		</view>
+	</view>
+	<view class="dec1">参与活动，只需动动手指就有机会抢到惊喜大奖！</view>
+	<view class="startTime">
+		活动时间：2019-12-01 00:00:00 - 2020-11-29 00:00:00
+	</view>
+	<view style="background-image:url('/pages/images/resttime.png')" class="restTime">
+		<view class="rst">距离活动开始还有 05天 03时53分51秒</view>
+		<image class="stepbar" src="/pages/images/stepbar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+	</view>
+
+	<view class="prizelist">
+		<image class="prizetitle" src="/pages/images/step-title.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		<view class="award">
+			<view class="thumb">
+				<image class="" src="/pages/images/12588501@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			</view>
+			<view class="awardname">手机</view>
+			<view class="awardinfo">
+				<view class="awardnum">3名</view>
+				<view class="awardlevel">一等奖</view>
+			</view>
+		</view>
+		<view class="award1">
+			<view class="thumb">
+				<image class="" src="/pages/images/12165257@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			</view>
+			<view class="awardname">8G u盘</view>
+			<view class="awardinfo">
+				<view class="awardnum">4-8名</view>
+				<view class="awardlevel">二等奖</view>
+			</view>
+		</view>
+		<view class="timeinfo">
+			领奖时间：2019-12-31 - 2020-02-02
+		</view>
+	</view>
+
+	<view class="participant">
+		<view class="par-title">
+			<image class="" src="/pages/images/parcant.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		</view>
+		<view class="par-list">
+			<view class="header-info">
+				<view class="par-header-thumb">
+					<image class="" src="/pages/images/500834991@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				</view>
+				<view class="par-header-name">千库公众号小程...</view>
+			</view>
+			<view class="par-time">49天前</view>
+			<view class="par-status">抢先参与</view>
+		</view>
+		<view class="par-list">
+			<view class="header-info">
+				<view class="par-header-thumb">
+					<image class="" src="/pages/images/500999846@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				</view>
+				<view class="par-header-name">千库公众号小程...</view>
+			</view>
+			<view class="par-time">49天前</view>
+			<view class="par-status">抢先参与</view>
+		</view>
+		<view class="par-list">
+			<view class="header-info">
+				<view class="par-header-thumb">
+					<image class="" src="/pages/images/500935564@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				</view>
+				<view class="par-header-name">千库公众号小程...</view>
+			</view>
+			<view class="par-time">49天前</view>
+			<view class="par-status">抢先参与</view>
+		</view>
+	</view>
+</view>

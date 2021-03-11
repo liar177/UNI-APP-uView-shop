@@ -1,0 +1,119 @@
+.box {
+  width: 100%;
+}
+.box .van-sidebar-item--selected {
+  background-color: #f7f8fa !important;
+}
+.box .van-sidebar-item--selected .van-sidebar-item__text {
+  font-size: 36rpx !important;
+}
+.box .van-sidebar-item__text {
+  font-weight: bold !important;
+}
+.box .header {
+  width: 100%;
+}
+.box .header .placeholder {
+  width: 100%;
+  height: 60rpx;
+}
+.box .header .header-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 42rpx;
+  color: #000000;
+  font-weight: bold;
+}
+.box .header .searchbox {
+  width: 688rpx;
+  height: 70rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  background-color: #f2f2f2;
+  border-radius: 34.5rpx;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box .header .searchbox image {
+  width: 28rpx;
+  height: 28rpx;
+}
+.box .header .searchbox input {
+  width: 544rpx;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 26rpx;
+  color: #8b8b8b;
+}
+.box .content {
+  width: 100%;
+  margin-top: 40rpx;
+  display: flex;
+}
+.box .content .sidebar {
+  width: 166rpx;
+  height: 960rpx;
+  background-color: #fafafa;
+  overflow: scroll;
+}
+.box .content .sidebar .van-sidebar-item {
+  font-size: 30rpx;
+  color: #242424;
+}
+.box .content .sidebar-content {
+  width: 584rpx;
+  overflow: scroll;
+}
+.box .content .sidebar-content swiper {
+  width: 100%;
+  height: 980rpx;
+}
+.box .content .sidebar-content .recom-banner {
+  width: 520rpx;
+  height: 210rpx;
+  margin: 0 auto ;
+  margin-bottom: 40rpx;
+}
+.box .content .sidebar-content .recom-banner image {
+  width: 100%;
+  height: 100%;
+}
+.box .content .sidebar-content .recom-title {
+  width: 100%;
+  font-size: 31rpx;
+  color: #242424;
+  font-weight: bold;
+}
+.box .content .sidebar-content .rem-grid {
+  width: 100%;
+  display: grid;
+  margin-top: 40rpx;
+  grid-template-columns: 184rpx 184rpx 184rpx;
+  grid-template-rows: 184rpx 184rpx 184rpx;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+}
+.box .content .sidebar-content .rem-grid .rem-grid-item {
+  width: 184rpx;
+  height: 184rpx;
+}
+.box .content .sidebar-content .rem-grid image {
+  width: 150rpx;
+  height: 150rpx;
+  overflow: none;
+  display: block;
+}
+.box .content .sidebar-content .rem-grid .rem-name {
+  margin-top: 20rpx;
+  font-size: 22rpx;
+  color: #242424;
+  font-weight: bold;
+  text-align: center;
+}
+.box .content .sidebar-content .placeholder {
+  width: 100%;
+  height: 80rpx;
+}

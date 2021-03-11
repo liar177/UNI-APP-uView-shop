@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ec232b",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "限时秒杀",
+  "navigationStyle": "default",
+  "enablePullDownRefresh":false
+}

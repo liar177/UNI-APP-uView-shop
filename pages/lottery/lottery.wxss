@@ -1,0 +1,311 @@
+.box {
+  width: 100%;
+  height: 1835rpx;
+  overflow: hidden;
+  position: relative;
+}
+.box .bgi {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box .title {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 126rpx;
+  margin-bottom: 63rpx;
+}
+.box .title .tit1 {
+  width: 50%;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box .title .tit1 .en {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 30rpx;
+}
+.box .title .tit1 .en view {
+  width: 76rpx;
+  height: 38rpx;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 24rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 3.4rpx;
+  color: #ffffff;
+  text-align: center;
+}
+.box .title .tit1 .cn {
+  width: 100%;
+  height: 72rpx;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 76rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+  text-shadow: 2.5rpx 4.3rpx 7rpx 0rpx rgba(6, 0, 1, 0.46);
+}
+.box .dec1 {
+  width: 638rpx;
+  height: 28rpx;
+  margin: 40rpx auto;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .startTime {
+  width: 650rpx;
+  height: 23rpx;
+  margin: 40rpx auto;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 24rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .restTime {
+  width: 692rpx;
+  height: 301rpx;
+  margin: 40rpx auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  z-index: 5;
+}
+.box .restTime .stepbar {
+  z-index: 10;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 610rpx;
+  height: 110rpx;
+}
+.box .restTime .rst {
+  position: absolute;
+  left: 100rpx;
+  top: 16rpx;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 26rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 1.3rpx;
+  color: #e13c3f;
+}
+.box .prizelist {
+  width: 93%;
+  height: 626rpx;
+  background-color: #ffffff;
+  border-radius: 12rpx;
+  margin: 0 auto;
+  position: relative;
+}
+.box .prizelist .prizetitle {
+  width: 100%;
+  height: 28rpx;
+  position: absolute;
+  left: 0;
+  top: 56rpx;
+}
+.box .prizelist .award {
+  width: 634rpx;
+  height: 180rpx;
+  background-color: #ff942a;
+  border-radius: 12rpx;
+  position: absolute;
+  left: 29rpx;
+  top: 129rpx;
+  display: flex;
+  align-items: center;
+}
+.box .prizelist .award .thumb {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .prizelist .award .thumb image {
+  width: 40rpx;
+  height: 54rpx;
+}
+.box .prizelist .award .awardname {
+  margin-left: 30rpx;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 32rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .prizelist .award .awardinfo {
+  margin-left: 270rpx;
+  text-align: center;
+}
+.box .prizelist .award .awardinfo .awardnum {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .prizelist .award .awardinfo .awardlevel {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .prizelist .award1 {
+  width: 634rpx;
+  height: 180rpx;
+  background-color: #ff942a;
+  border-radius: 12rpx;
+  position: absolute;
+  left: 29rpx;
+  top: 350rpx;
+  display: flex;
+  align-items: center;
+}
+.box .prizelist .award1 .thumb {
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 40rpx;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .prizelist .award1 .thumb image {
+  width: 40rpx;
+  height: 54rpx;
+}
+.box .prizelist .award1 .awardname {
+  margin-left: 30rpx;
+  font-family: SourceHanSansCN-Bold;
+  font-size: 32rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .prizelist .award1 .awardinfo {
+  margin-left: 272rpx;
+  text-align: center;
+}
+.box .prizelist .award1 .awardinfo .awardnum {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .prizelist .award1 .awardinfo .awardlevel {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .prizelist .timeinfo {
+  position: absolute;
+  bottom: 30rpx;
+  left: 40rpx;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ff942a;
+}
+.box .participant {
+  width: 93%;
+  height: 401rpx;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12rpx;
+  margin-top: 40rpx;
+}
+.box .participant .par-title {
+  width: 100%;
+}
+.box .participant .par-title image {
+  margin-top: 48rpx;
+  width: 100%;
+  height: 30rpx;
+}
+.box .participant .par-list {
+  width: 92%;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .participant .par-list .header-info {
+  display: flex;
+  align-items: center;
+}
+.box .participant .par-list .header-info .par-header-thumb image {
+  width: 60rpx;
+  height: 60rpx;
+}
+.box .participant .par-list .header-info .par-header-name {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ff9325;
+}
+.box .participant .par-list .par-time {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ff9325;
+}
+.box .participant .par-list .par-status {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 30rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 32rpx;
+  letter-spacing: 0rpx;
+  color: #ff9325;
+}

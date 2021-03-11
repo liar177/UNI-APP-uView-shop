@@ -1,0 +1,113 @@
+<!--pages/detail/detail.wxml-->
+<view  class="box">
+	<view class="header">
+		<image class="header-bgi" src="/pages/images/detail-bgi.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		<view class="placeholder"></view>
+		<view class="nav-bar">
+			<navigator open-type="navigateBack" delta="1">
+				<van-icon name="arrow-left" />
+			</navigator>
+		</view>
+	</view>
+	<view class="detailpage-pricebox">
+		<view class="price-box">
+			<view class="small-price">
+				￥
+			</view>13186
+			<view class="small-price">
+				.0
+			</view>
+		</view>
+		<view class="rightbox">
+			<view class="markdown-box">
+				<image class="" src="/pages/images/mark_down.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view>降价通知</view>
+			</view>
+			<view class="care-box">
+				<image class="" src="/pages/images/care.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view>关注</view>
+			</view>
+		</view>
+	</view>
+	<view class="vip-details">
+		<view class="vd-content">
+			<image class="" src="/pages/images/mini-vip.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			<view>新人首单购买可直升黄金会员解锁更多权益</view>
+		</view>
+		<view class="getmore">
+			<van-icon name="arrow" />
+		</view>
+	</view>
+	<view class="good-title-box">
+		<view class="sign">自营</view>
+		<view class="good-title">DJI千库无人机 新款【六期免息】Qianku2Pro/zoom专业版无人机可折叠航拍选佩带屏遥</view>
+	</view>
+	<view class="separator"></view>
+	<view class="promotion-box">
+		<view class="pb-firstline">
+			<view class="discount-sign1">跨店铺满减</view>
+			<view class="discount-note1">满5000减50</view>
+		</view>
+		<view class="pb-secondline">
+			<view class="discount-sign2">满减</view>
+			<view class="discount-note2">同一件商品，第二件享95折</view>
+		</view>
+		<view class="promote-sign">
+			<view class="left-sign">促销</view>
+			<view class="right-sign">
+				<view></view>
+				<view></view>
+				<view></view>
+			</view>
+		</view>
+	</view>
+	<view class="separator"></view>
+	<view class="goodinfo-box">
+		<view class="combo">
+			<view class="combo-name">Qianku2专业版+配件包+随心换</view>
+			<view class="promote-sign">
+				<view class="left-sign">选择</view>
+				<view class="right-sign">
+					<view></view>
+					<view></view>
+					<view></view>
+				</view>
+			</view>
+		</view>
+		<view class="send">
+			<view class="address">
+				<view class="add-firstline">广东省 深圳市 福田区我图村</view>
+				<view class="add-secondline">
+					现货 <view>23:00前付款，预计明天（11月28日）前送到</view>
+				</view>
+			</view>
+			<view class="promote-sign">
+				<view class="left-sign">配送</view>
+				<view class="right-sign">
+					<view></view>
+					<view></view>
+					<view></view>
+				</view>
+			</view>
+		</view>
+		<view class="freight">
+			<view class="freight-status">包邮</view>
+			<view class="promote-sign">
+				<view class="left-sign">配送</view>
+				<view class="right-sign">
+					<view></view>
+					<view></view>
+					<view></view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="separator lastone"></view>
+	<van-goods-action>
+		<van-goods-action-icon icon="shop-o" text="店铺" />
+		<van-goods-action-icon icon="chat-o" text="客服" info="5" />
+		<van-goods-action-icon icon="star-o" text="收藏" dot />
+		<van-goods-action-button text="加入购物车" type="warning" />
+		<van-goods-action-button text="立即购买" />
+	</van-goods-action>
+</view>

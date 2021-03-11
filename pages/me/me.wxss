@@ -1,0 +1,299 @@
+.wrapper {
+  position: relative;
+}
+.box {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1214rpx;
+  z-index: -10;
+  background-color: #f7f8f9;
+}
+.box .bgi {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 683rpx;
+  z-index: -1;
+}
+.box .header {
+  width: 100%;
+  height: 683rpx;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #00f;
+  position: relative;
+  /*    background-size: 100% 80%; */
+}
+.box .header .placeholder {
+  width: 100%;
+  height: 125rpx;
+  background-color: transparent;
+}
+.box .header .header-thumbline {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.box .header .header-thumbline .header-left {
+  display: flex;
+  margin-left: 28rpx;
+}
+.box .header .header-thumbline .header-right {
+  width: 188rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.box .header .header-thumbline .header-right image {
+  width: 188rpx;
+  height: 56rpx;
+}
+.box .header .header-thumbline .thumb {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #000000;
+  border: solid 3rpx #ffffff;
+  border-radius: 100%;
+  z-index: 10;
+}
+.box .header .header-thumbline .thumb image {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.box .header .header-thumbline .userbox {
+  margin-left: 20rpx;
+}
+.box .header .header-thumbline .userbox .username {
+  margin-top: 10rpx;
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.box .header .header-thumbline .userbox .vip {
+  width: 170rpx;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box .header .header-thumbline .userbox .vip image:first-child {
+  width: 28rpx;
+  height: 22rpx;
+}
+.box .header .header-thumbline .userbox .vip view {
+  font-size: 22rpx;
+  color: #fff;
+}
+.box .header .header-thumbline .userbox .vip image:last-child {
+  width: 25rpx;
+  height: 25rpx;
+}
+.box .header .header-tabs {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.box .header .header-tabs .header-tab {
+  width: 90rpx;
+  text-align: center;
+}
+.box .header .header-tabs .header-tab .ht-num {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 32rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 42rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .header .header-tabs .header-tab .ht-name {
+  font-family: SourceHanSansCN-Regular;
+  font-size: 22rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 42rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+}
+.box .header .order-box {
+  width: 702rpx;
+  height: 390rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+}
+.box .header .order-box .order-title {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f3f3f3;
+}
+.box .header .order-box .order-title .ot {
+  margin-left: 21rpx;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 26rpx;
+  font-weight: bold;
+  line-height: 42rpx;
+  color: #302d2d;
+}
+.box .header .order-box .order-title .order-all {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 22rpx;
+  line-height: 42rpx;
+  color: #a9a9a9;
+  display: flex;
+  margin-right: 20rpx;
+}
+.box .header .order-box .order-title .order-all view:first-child {
+  margin-right: 10rpx;
+}
+.box .header .order-box .order-title .order-all view:last-child {
+  font-size: 30rpx;
+}
+.box .header .order-box .order-grid {
+  width: 90%;
+  height: 138rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .header .order-box .order-grid .og-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box .header .order-box .order-grid .og-item image {
+  width: 44rpx;
+  height: 45rpx;
+}
+.box .header .order-box .order-grid .og-item view {
+  font-size: 25rpx;
+  color: #333333;
+}
+.box .header .order-box .showorder-box {
+  width: 662rpx;
+  height: 160rpx;
+  margin: 0 auto;
+  background-color: #f7f8f9;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box .header .order-box .showorder-box .left-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box .header .order-box .showorder-box .left-box image {
+  width: 110rpx;
+  height: 110rpx;
+}
+.box .header .order-box .showorder-box .right-box {
+  position: relative;
+}
+.box .header .order-box .showorder-box .right-box .showbox-title {
+  font-size: 22rpx;
+  color: #333333;
+}
+.box .header .order-box .showorder-box .right-box .show-status {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 22rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 42rpx;
+  letter-spacing: 0rpx;
+  color: #b2b2b2;
+}
+.box .header .order-box .showorder-box .right-box .showorder-price {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 20rpx;
+  color: #ff1f1c;
+  display: flex;
+  align-items: center;
+}
+.box .header .order-box .showorder-box .right-box .showorder-price view {
+  font-size: 22rpx;
+  font-weight: bold;
+}
+.box .header .order-box .showorder-box .right-box .purchase {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 124rpx;
+  height: 42rpx;
+  background-color: #ffffff;
+  border-radius: 20.5rpx;
+  border: solid 2rpx #f29a9e;
+  font-size: 18rpx;
+  color: #ff1f1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box .asset {
+  width: 702rpx;
+  height: 203rpx;
+  background-color: #ffffff;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 94rpx;
+}
+.box .asset .asset-title {
+  height: 90rpx;
+  width: 100%;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  font-size: 26rpx;
+  color: #333333;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.box .asset .asset-grid {
+  width: 90%;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+}
+.box .asset .ag-item {
+  width: 92rpx;
+  height: 70rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #656565;
+}
+.box .asset .ag-item .ag-num {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #2f2c2c;
+}
+.box .serve {
+  width: 702rpx;
+  height: 410rpx;
+  background-color: #ffffff;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+}
+.box .serve .serve-title {
+  width: 90%;
+  height: 90rpx;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  font-size: 26rpx;
+  color: #333333;
+  font-weight: bold;
+}

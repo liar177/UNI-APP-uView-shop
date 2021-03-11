@@ -1,0 +1,100 @@
+<!--pages/vip/vip.wxml-->
+<view class="box">
+	<view class="header">
+		<image class="header-bgi" src="/pages/images/vip-header.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		<view class="placeholder"></view>
+		<view class="nav-bar">
+			<navigator open-type="navigateBack" delta="1">
+				<van-icon name="arrow-left" />
+			</navigator>
+			<view class="nav-title">会员中心</view>
+		</view>
+	</view>
+	<view class="layout">
+		<view id="layout">
+			<image class="layout-bgi" src="/pages/images/vip-layout.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			<view class="topbox">
+				<view class="vip-thumb">
+					<image class="" src="/pages/images/500834991@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+				</view>
+				<view class="vip-namebox">
+					<view class="vip-name">千库君</view>
+					<view class="desc">升级至尊会员享额外特权</view>
+				</view>
+			</view>
+			<view class="bottombox">
+				<view class="credits-box">
+					<view class="credits-name">
+						积分
+					</view>
+					<view class="credit">0</view>
+				</view>
+				<view class="coins-box">
+					<view class="coins-name">
+						金币
+					</view>
+					<view class="coin">920</view>
+				</view>
+				<view class="tickets-box">
+					<view class="tickets-name">
+						优惠券
+					</view>
+					<view class="ticket">3</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="rechange-box">
+		<view class="rb-title">
+			会员充值
+		</view>
+		<scroll-view scroll-x="{{true}}" class="rb-options">
+			<view bindtap="isactive" data-index="0" class="rb-option, {{currindex==0?'option-active':''}}">
+				<view class="rb-duration">12个月</view>
+				<view class="rb-price">
+					<view>￥</view>88
+				</view>
+				<view class="rb-desc">到期自动续费可随时关闭</view>
+			</view>
+			<view bindtap="isactive" data-index="1" class="rb-option, {{currindex==1?'option-active':''}}">
+				<view class="rb-duration">1个月</view>
+				<view class="rb-price">
+					<view>￥</view>15
+				</view>
+				<view class="rb-desc">联合月卡</view>
+			</view>
+			<view bindtap="isactive" data-index="2" class="rb-option, {{currindex==2?'option-active':''}}">
+				<view class="rb-duration">连续包月</view>
+				<view class="rb-price">
+					<view>￥</view>10
+				</view>
+				<view class="rb-desc">到期自动续费可随时关闭</view>
+			</view>
+			<view bindtap="isactive" data-index="3" class="rb-option, {{currindex==3?'option-active':''}}">
+				<view class="rb-duration">1个月</view>
+				<view class="rb-price">
+					<view>￥</view>15
+				</view>
+				<view class="rb-desc">到期自动续费可随时关闭</view>
+			</view>
+		</scroll-view>
+		<view class="rechange-button">立即升级</view>
+		<view class="button-desc">升级得800金币</view>
+	</view>
+	<view class="privilege-box">
+		<view class="priv-title">
+			会员特权
+		</view>
+		<van-grid class="priv-grids" column-num="5" border="{{ false }}">
+			<van-grid-item use-slot wx:for="{{ vipPriv }}" wx:key="index">
+				<image style="width: 80rpx; height: 80rpx;" src="{{vipPriv[index].src}}" />
+				<view class="priv-name">{{vipPriv[index].name}}</view>
+			</van-grid-item>
+		</van-grid>
+	</view>
+	<view class="privilege-level">
+		<image class="" src="/pages/images/vip-level.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			
+	</view>
+</view>

@@ -1,0 +1,201 @@
+<!--index.wxml-->
+<view class="BOX">
+	<view class="header">
+		<image class="h-bg" src="../images/input1@2x.png"></image>
+		<view id="input">
+			<input type="text" class="search-text" />
+			<icon class="icon-search" type="search" size="20"></icon>
+		</view>
+		<swiper indicator-dots="true" autoplay="true" interval="2000" class="index-banner">
+			<swiper-item class="" item-id="">
+				<image src="../images/header-banner@2x.jpg"></image>
+			</swiper-item>
+			<swiper-item class="" item-id="">
+				<image src="../images/header-banner@2x.jpg"></image>
+			</swiper-item>
+			<swiper-item class="" item-id="">
+				<image src="../images/header-banner@2x.jpg"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+
+	<swiper class="gridswiper" indicator-dots="true" indicator-color=" rgba(126, 126, 126, 0.3)" indicator-active-color="rgba(236,35,43,1)" autoplay="{{false}}" current="0" duration="500" circular="{{true}}" vertical="{{false}}" easing-function="default" display-multiple-items="1" skip-hidden-item-layout="false" bindchange="" bindanimationfinish="">
+		<swiper-item>
+			<view class="gridview">
+				<view class="griditem" bindtap="go2pages" data-index="{{index}}" wx:for="{{arr}}" wx:key="index">
+					<image class="gridimg" src="{{item}}" lazy-load="false" />
+					<view class="gridtit" space="false" decode="false">
+						{{arr1[index]}}
+					</view>
+				</view>
+			</view>
+		</swiper-item>
+		<swiper-item>
+			<view class="gridview">
+				<view class="griditem" wx:for="{{arr}}" wx:key="index">
+					<image class="gridimg" src="{{item}}" lazy-load="false" />
+					<view class="gridtit" space="false" decode="false">
+						{{arr1[index]}}
+					</view>
+				</view>
+			</view>
+		</swiper-item>
+
+	</swiper>
+
+	<view class="superitems">
+		<!-- 超级单品 -->
+		<view class="si-title">
+			<view class="limit-time">
+				<text class="siTit">超级单品</text>
+				<view class="countdown">00</view>:
+				<view class="countdown">22</view>:
+				<view class="countdown">22</view>:
+			</view>
+			<view class="seeall">
+				查看全部>
+			</view>
+		</view>
+
+		<view class="si-items">
+			<view>
+				<image class="si-imgs" src="../images/12567541@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			</view>
+			<view>
+				<image class="si-imgs" src="../images/11965070@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			</view>
+			<view>
+				<image class="si-imgs" src="../images/12567541@2x.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			</view>
+		</view>
+		<view class="item-names">
+			<view>Dr.Dre Qianku3</view>
+			<view>XX老白干</view>
+			<view>Dr.Dre Qianku3</view>
+		</view>
+		<view class="item-prices">
+			<view class="it-price">
+				<view class="old-price">
+					￥1888
+				</view>
+				<view class="new-price">
+					<view class="np-btn1">
+						<view class="">
+							￥1698
+						</view>
+						<view class="np-btn2">
+							<view class="qiang">抢!</view>
+						</view>
+					</view>
+
+				</view>
+			</view>
+			<view class="it-price">
+				<view class="old-price">
+					￥1888
+				</view>
+				<view class="new-price">
+					<view class="np-btn1">
+						<view class="">
+							￥1698
+						</view>
+						<view class="np-btn2">
+							<view class="qiang">抢!</view>
+						</view>
+					</view>
+
+				</view>
+			</view>
+			<view class="it-price">
+				<view class="old-price">
+					￥1888
+				</view>
+				<view class="new-price">
+					<view class="np-btn1">
+						<view class="">
+							￥1698
+						</view>
+						<view class="np-btn2">
+							<view class="qiang">抢!</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class="discounts">
+		<view class="discount-tit">
+			<view class="reddis">
+				<view>
+					省钱速报
+				</view>
+				<view>
+					<image class="" src="../images/501083004@2x.png" />
+				</view>
+			</view>
+			<view class="greydis">
+				<view>
+					折扣促销每日更新
+				</view>
+				<view>
+					2781人火热挑选中
+				</view>
+			</view>
+			<view class="dis-items">
+				<view class="dis-tits">
+					<view class="dis-title">满2件享75折</view>
+					<view class="dis-title">满2件享88折</view>
+					<view class="dis-title">满1件享95折</view>
+				</view>
+				<view class="dis-its">
+					<view class="disitem">
+						<image class="" src="../images/11626638@2x.png" />
+					</view>
+					<view class="disitem">
+						<image class="" src="../images/12559133@2x.png" />
+					</view>
+					<view class="disitem">
+						<image class="" src="../images/11629200@2x.png" />
+					</view>
+					<view class="dis-enter">
+						<image class="" src="../images/cellofdiscount.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+				</view>
+
+			</view>
+		</view>
+	</view>
+
+	<scroll-view show-scrollbar="{{false}}" enable-flex="{{true}}" scroll-x="{{true}}" class="index-recommend">
+		<view wx:for="{{tags}}" wx:key="index" class="index-recom-item">
+			<view data-index="{{ index }}" bindtap="getactive" class="{{['index-recom-itemTit',index==current?'index-active':'']}}">{{tags[index]}}</view>
+			<view data-index="{{ index }}" bindtap="getactive" class="{{['index-recom-itemDesc',index==current?'index-active':'']}}">{{tags2[index]}}</view>
+		</view>
+	</scroll-view>
+
+	<view class="dyl">
+		<view class="index-rem-shoes">
+			<image class="" src="../images/13389@2x.jpg" />
+			<view style="white-space:pre-line" class="index-rem-name">Jzcwrwe Qianku 定制款休闲鞋
+				专柜 时尚舒适</view>
+			<view class="fulldiscount">满5000减10</view>
+			<view class="index-rem-price">
+				<view>￥</view>
+				<view>5699</view>
+				<view>21人买过</view>
+			</view>
+		</view>
+		<view class="index-rem-shoes">
+			<image class="" src="../images/13389@2x.jpg" />
+			<view style="white-space:pre-line" class="index-rem-name">Jzcwrwe Qianku 定制款休闲鞋
+				专柜 时尚舒适</view>
+			<view class="fulldiscount">满5000减10</view>
+			<view class="index-rem-price">
+				<view>￥</view>
+				<view>5699</view>
+				<view>21人买过</view>
+			</view>
+		</view>
+	</view>
+</view>

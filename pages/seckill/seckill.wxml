@@ -1,0 +1,114 @@
+<!--pages/seckill/seckill.wxml-->
+<view class="BOX">
+	<scroll-view show-scrollbar="{{false}}" enable-flex="{{true}}" scroll-x="{{true}}" class="seckill-timelist">
+		<view class="scrollBox">
+			<view bindtap="getactive" data-index="{{index}}" wx:for="{{timeList}}" wx:key="index" class="{{['seckill-timelist-items',index==current?'seckill-active':'']}}">
+				<view class="{{['status',index==current?'seckill-active':'']}}">{{timeList[index].status}}</view>
+				<view class="{{['start-time',index==current?'seckill-active':'']}}">{{timeList[index].time}}</view>
+			</view>
+		</view>
+	</scroll-view>
+
+	<view class="time2end">
+		<text>距结束</text>
+		<view class="timeBox">
+			<view class="timebox">00</view>:
+			<view class="timebox">22</view>:
+			<view class="timebox">22</view>
+		</view>
+		<view class="peoplenum">
+			<text class="p1">25698</text>
+			<text class="p2">人正在抢购</text>
+		</view>
+	</view>
+
+	<scroll-view class="brand-hot" scroll-x="false" scroll-x="true" upper-threshold="50" lower-threshold="50">
+		<view class="brand-item">
+			<image class="" src="/pages/images/seckill-hot.jpg" />
+			<view class="brand-price">
+				<view class="brand-newprice">
+					￥
+					<view class="" selectable="false" space="false" decode="false">
+						60.00
+					</view>
+				</view>
+				<view class="brand-oldprice">
+					￥254.00
+				</view>
+			</view>
+			<view class="buynow">马上抢</view>
+		</view>
+		<view class="brand-item">
+			<image class="" src="/pages/images/seckill-hot.jpg" />
+			<view class="brand-price">
+				<view class="brand-newprice">
+					￥
+					<view class="" selectable="false" space="false" decode="false">
+						60.00
+					</view>
+				</view>
+				<view class="brand-oldprice">
+					￥254.00
+				</view>
+			</view>
+			<view class="buynow">马上抢</view>
+		</view>
+	</scroll-view>
+
+	<view class="showList">
+		<view class="showlist-item">
+			<view class="sl-item">
+				<image class="thumb" src="/pages/images/500829399@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="sl-info">
+					<view class="sl-title">女装条纹一字领露肩荷叶边中长款
+						裙子
+					</view>
+					<view class="sl-price-num">
+						<view class="sl-leftitem">
+							<view class="sl-num">
+								<view class="sl-sold">已抢1323件</view>
+								<view class="sl-discount">30%</view>
+							</view>
+							<view class="sl-price">
+								<view class="sl-newprice">
+									<view>￥</view>54
+								</view>
+								<view class="sl-oldprice">￥254.00</view>
+							</view>
+						</view>
+						<view class="sl-rightitem">
+							<view class="buynow">马上抢</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="showlist-item">
+			<view class="sl-item">
+				<image class="thumb" src="/pages/images/500829399@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<view class="sl-info">
+					<view class="sl-title">女装条纹一字领露肩荷叶边中长款
+						裙子
+					</view>
+					<view class="sl-price-num">
+						<view class="sl-leftitem">
+							<view class="sl-num">
+								<view class="sl-sold">已抢1323件</view>
+								<view class="sl-discount">30%</view>
+							</view>
+							<view class="sl-price">
+								<view class="sl-newprice">
+									<view>￥</view>54
+								</view>
+								<view class="sl-oldprice">￥254.00</view>
+							</view>
+						</view>
+						<view class="sl-rightitem">
+							<view class="buynow">马上抢</view>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

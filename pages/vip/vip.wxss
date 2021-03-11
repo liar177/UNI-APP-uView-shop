@@ -1,0 +1,243 @@
+.box {
+  width: 100%;
+}
+.box .placeholder {
+  width: 100%;
+  height: 50rpx;
+}
+.box .header {
+  width: 100%;
+  height: 392rpx;
+  position: relative;
+}
+.box .header .header-bgi {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -2;
+}
+.box .header .nav-bar {
+  width: 61%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 42rpx;
+  color: #fff;
+}
+.box .header .nav-bar .van-icon-arrow-left {
+  margin-left: 20rpx;
+  font-size: 40rpx;
+}
+.box .layout {
+  width: 686rpx;
+  height: 400rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 143rpx;
+}
+.box .layout #layout {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.box .layout #layout .layout-bgi {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.box .layout #layout .topbox {
+  width: 80%;
+  height: 85rpx;
+  margin: 0 auto;
+  padding-top: 67rpx;
+  display: flex;
+}
+.box .layout #layout .topbox .vip-thumb {
+  width: 85rpx;
+  height: 85rpx;
+  margin-right: 20rpx;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.box .layout #layout .topbox .vip-thumb image {
+  width: 100%;
+  height: 100%;
+}
+.box .layout #layout .topbox .vip-namebox {
+  color: #ffffff;
+  text-align: left;
+}
+.box .layout #layout .topbox .vip-namebox .vip-name {
+  font-size: 35rpx;
+  margin-bottom: 20rpx;
+}
+.box .layout #layout .topbox .vip-namebox .desc {
+  font-size: 24rpx;
+}
+.box .layout #layout .bottombox {
+  margin-top: 90rpx;
+  width: 67%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.box .layout #layout .bottombox .credits-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.box .layout #layout .bottombox .credits-box .credits-name {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 24rpx;
+  color: #cfb386;
+}
+.box .layout #layout .bottombox .credits-box .credit {
+  font-size: 35rpx;
+  color: #fff;
+}
+.box .layout #layout .bottombox .coins-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.box .layout #layout .bottombox .coins-box .coins-name {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 24rpx;
+  color: #cfb386;
+}
+.box .layout #layout .bottombox .coins-box .coin {
+  font-size: 35rpx;
+  color: #fff;
+}
+.box .layout #layout .bottombox .tickets-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.box .layout #layout .bottombox .tickets-box .tickets-name {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 24rpx;
+  color: #cfb386;
+}
+.box .layout #layout .bottombox .tickets-box .ticket {
+  font-size: 35rpx;
+  color: #fff;
+}
+.box .rechange-box {
+  margin-top: 160rpx;
+  width: 100%;
+}
+.box .rechange-box .rb-title {
+  font-size: 34rpx;
+  line-height: 42rpx;
+  font-weight: bold;
+  letter-spacing: 0rpx;
+  color: #1c1c1c;
+  margin-left: 20rpx;
+}
+.box .rechange-box .rb-options {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.box .rechange-box .rb-options .rb-option {
+  vertical-align: top;
+  white-space: initial;
+  width: 200rpx;
+  height: 236rpx;
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  border-radius: 12rpx;
+  border: solid 2rpx #f2f2f3;
+  text-align: center;
+  display: inline-block;
+}
+.box .rechange-box .rb-options .rb-option .rb-duration {
+  padding-top: 20rpx;
+  width: 100%;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  color: #1c1c1c;
+}
+.box .rechange-box .rb-options .rb-option .rb-price {
+  width: 100%;
+  font-size: 48rpx;
+  line-height: 42rpx;
+  color: #e3be83;
+  display: flex;
+  justify-content: center;
+}
+.box .rechange-box .rb-options .rb-option .rb-price view {
+  font-size: 26rpx;
+}
+.box .rechange-box .rb-options .rb-option .rb-desc {
+  margin: 0 auto;
+  width: 132rpx;
+  font-family: SourceHanSansCN-Medium;
+  font-size: 22rpx;
+  line-height: 42rpx;
+  color: #a5a3a2;
+}
+.box .rechange-box .rb-options .option-active {
+  background-color: #fbf1e5 !important;
+}
+.box .rechange-box .rechange-button {
+  width: 690rpx;
+  height: 85rpx;
+  margin: 0 auto;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, #efcf9e 0%, #e4bf85 100%), linear-gradient(#edd2a9, #edd2a9);
+  background-blend-mode: normal, 
+        normal;
+  border-radius: 42rpx;
+  font-size: 30rpx;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+.box .rechange-box .button-desc {
+  margin-top: 20rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+  color: #a5a3a2;
+}
+.box .privilege-box {
+  margin-top: 80rpx;
+  width: 100%;
+}
+.box .privilege-box .priv-title {
+  font-size: 34rpx;
+  line-height: 42rpx;
+  font-weight: bold;
+  letter-spacing: 0rpx;
+  color: #1c1c1c;
+  margin-left: 20rpx;
+}
+.box .privilege-box .priv-grids {
+  width: 95%;
+  margin: 0 auto;
+}
+.box .privilege-box .priv-grids .priv-name {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 24rpx;
+  color: #383738;
+}
+.box .privilege-level {
+  width: 100%;
+  height: 466rpx;
+}
+.box .privilege-level image {
+  width: 100%;
+  height: 100%;
+}

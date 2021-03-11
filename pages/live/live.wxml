@@ -1,0 +1,86 @@
+<!--pages/live/live.wxml-->
+<view class="box">
+	<view class="header">
+		<view class="placeholder"></view>
+		<view class="nav-bar">
+			<navigator open-type="navigateBack" delta="1">
+				<van-icon name="arrow-left" />
+			</navigator>
+			<view class="nav-title">直播</view>
+		</view>
+	</view>
+	<van-tabs active="{{ active }}">
+		<van-tab title="直播中">
+			<view class="content">
+				<image class="" src="/pages/images/live1.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<image class="" src="/pages/images/live2.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+				<image class="" src="/pages/images/live1.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+			</view>
+		</van-tab>
+		<van-tab title="预告">
+			<view class="notice">
+				<view class="notice-title">
+					<image class="" src="/pages/images/clock.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					<view>
+						直播预告
+					</view>
+				</view>
+
+				<scroll-view class="remind-swiper" enable-flex="{{false}}" scroll-x="{{true}}">
+					<view class="time-lines">
+						<view class="time-line-box">
+							<view class="time">明天 07:30</view>
+							<view class="line"></view>
+						</view>
+						<view class="time-line-box">
+							<view class="time">明天 08:30</view>
+							<view class="line"></view>
+						</view>
+						<view class="time-line-box">
+							<view class="time">明天 07:30</view>
+							<view class="line"></view>
+						</view>
+					</view>
+					<view class="remind-box">
+						<view class="remind">
+							<view class="swiper-content">
+								<image class="" src="/pages/images/500829399@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+								<view class="desc1">日用好物给你精致生活</view>
+								<view class="desc2">福利购高返现</view>
+							</view>
+						</view>
+						<view class="remind" item-id="">
+							<view class="swiper-content">
+								<image class="" src="/pages/images/500834991@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+								<view class="desc1">日用好物给你精致生活</view>
+								<view class="desc2">福利购高返现</view>
+							</view>
+						</view>
+						<view class="remind" item-id="">
+							<view class="swiper-content">
+								<image class="" src="/pages/images/500829399@2x.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+								<view class="desc1">日用好物给你精致生活</view>
+								<view class="desc2">福利购高返现</view>
+							</view>
+						</view>
+					</view>
+				</scroll-view>
+			</view>
+			<view class="playback">
+				<view class="playback-title">
+					<image class="" src="/pages/images/playback.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					<view>直播回放</view>
+				</view>
+				<view scroll-y="{{true}}" class="playback-list">
+					<view class="pb-item">
+						<image class="" src="/pages/images/hotBrand-man.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+					<view class="pb-item">
+						<image class="" src="/pages/images/hotBrand-women.jpg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+					</view>
+				</view>
+			</view>
+		</van-tab>
+		<van-tab title="回放"></van-tab>
+	</van-tabs>
+</view>

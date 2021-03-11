@@ -1,0 +1,142 @@
+<!--pages/discover/discover.wxml-->
+<view class="box">
+	<view class="header">
+		<image class="header-bgi" src="/pages/images/diccover-bgi.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+		<view id="input">
+			<input type="text" class="search-text" />
+			<icon class="icon-search" type="search" size="14"></icon>
+		</view>
+		<view class="placeholder"></view>
+		<view class="discover-tabs">
+			<van-tabs color="#ee0a24" title-active-color="#fff" title-inactive-color="#fff" active="{{ active }}">
+				<van-tab title="今日精选"></van-tab>
+				<van-tab title="美味生鲜"></van-tab>
+				<van-tab title="母婴育儿"></van-tab>
+				<van-tab title="数码家电"></van-tab>
+			</van-tabs>
+		</view>
+		<swiper autoplay="{{true}}" interval="3000" class="dis-banner" next-margin="25rpx" indicator-dots="false" indicator-color="rgba(0,0,0,.3)"  current="0" current-item-id="" duration="1000" circular="{{true}}" vertical="{{false}}" display-multiple-items="1">
+			<swiper-item class="" item-id="">
+				<image class="" src="/pages/images/discover-banner.jpg" />
+			</swiper-item>
+			<swiper-item class="" item-id="">
+				<view class="dis-banner2">
+					<view class="dis-top"></view>
+					<view class="dis-bom"></view>
+				</view>
+			</swiper-item>
+			<swiper-item class="" item-id="">
+				<view class="dis-banner3">
+					<view class="dis-top"></view>
+					<view class="dis-bom"></view>
+				</view>
+			</swiper-item>
+
+		</swiper>
+
+	</view>
+	<view class="discover-modules">
+		<view class="discover-module">
+			<view class="module-title">
+				<view class="module-title-name">
+					每日热销总榜
+				</view>
+				<view class="refresh">
+					<text>下次更新</text>
+					<view class="refresh-time-box">
+						00
+					</view>
+					：
+					<view class="refresh-time-box">
+						22
+					</view>
+					：
+					<view class="refresh-time-box">
+						22
+					</view>
+				</view>
+			</view>
+			<view class="module-item">
+				<view class="item-thumb">
+					<image class="" src="/pages/images/hair-dryer.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+				</view>
+				<view class="item-content">
+					<view class="item-name">
+						千库（Qianku）电吹风机 家用 大功率 纳米水离子 双侧矿物
+					</view>
+					<view class="item-discount">
+						满80减5
+					</view>
+					<view class="item-pricebox">
+						<view class="item-price">
+							<view>
+								￥
+							</view>
+							1199
+						</view>
+						<view class="buynum">
+							2.4万人已抢
+						</view>
+					</view>
+				</view>
+
+
+			</view>
+			<view class="module-item">
+				<view class="item-thumb">
+					<image class="" src="/pages/images/discover-item2.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+				</view>
+				<view class="item-content">
+					<view class="item-name">
+						千库（Qianku）电吹风机 家用 大功率 纳米水离子 双侧矿物
+					</view>
+					<view class="item-discount">
+						满80减5
+					</view>
+					<view class="item-pricebox">
+						<view class="item-price">
+							<view>
+								￥
+							</view>
+							1199
+						</view>
+						<view class="buynum">
+							2.4万人已抢
+						</view>
+					</view>
+				</view>
+
+
+			</view>
+			<view class="module-item">
+				<view class="item-thumb">
+					<image class="" src="/pages/images/discover-item3.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+
+				</view>
+				<view class="item-content">
+					<view class="item-name">
+						千库（Qianku）电吹风机 家用 大功率 纳米水离子 双侧矿物
+					</view>
+					<view class="item-discount">
+						满80减5
+					</view>
+					<view class="item-pricebox">
+						<view class="item-price">
+							<view>
+								￥
+							</view>
+							1199
+						</view>
+						<view class="buynum">
+							2.4万人已抢
+						</view>
+					</view>
+				</view>
+
+
+			</view>
+		</view>
+	</view>
+</view>
